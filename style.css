@@ -1,9 +1,21 @@
+/* =========================
+   GLOBAL
+========================= */
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-  background: white;
+  background: #fff;
   color: #777;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
 
 header {
   text-align: center;
@@ -22,16 +34,22 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   color: #888;
   margin: 0 13px;
   font-size: 14px;
 }
 
-nav a.active,
 nav a:hover {
   color: #d88973;
 }
+
+nav a.active {
+  color: #b65a45;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
 
 .home-panel {
   width: 960px;
@@ -48,7 +66,6 @@ nav a:hover {
   color: #ddd;
   font-size: 14px;
   line-height: 1.45;
-  z-index: 2;
 }
 
 .bio a {
@@ -61,24 +78,16 @@ nav a:hover {
   filter: grayscale(100%);
 }
 
-
+/* =========================
+   PORTFOLIO PAGE (DARK)
+========================= */
 
 body.portfolio-page {
   background: #000;
   color: #555;
 }
 
-.portfolio-page header h1 {
-  color: #555;
-}
-
-.portfolio-page nav a {
-  color: #444;
-}
-
-.portfolio-page nav a.active {
-  color: #b65a45;
-}
+/* Title box */
 
 .portfolio-title {
   width: 650px;
@@ -102,10 +111,14 @@ body.portfolio-page {
   font-size: 18px;
 }
 
+/* Portfolio container */
+
 .portfolio {
   width: 860px;
   margin: 0 auto;
 }
+
+/* Project card */
 
 .item {
   display: grid;
@@ -114,20 +127,26 @@ body.portfolio-page {
   border: 1px solid #666;
   padding: 18px;
   margin-bottom: 80px;
+  background: transparent;
 }
+
+/* Image */
 
 .item img {
   width: 470px;
-  background: white;
+  background: #fff;
 }
+
+/* Titles */
 
 .item h2 {
   margin: 0;
-  display: inline;
+  display: inline-block;
   background: #e5e529;
   color: #111;
   font-size: 28px;
   font-weight: 800;
+  padding: 2px 6px;
 }
 
 .item h4 {
@@ -137,18 +156,68 @@ body.portfolio-page {
   margin: 6px 0 15px;
   font-size: 18px;
   font-weight: 800;
+  padding: 2px 6px;
 }
+
+/* Text */
 
 .item p {
   color: #555;
-  line-height: 1.35;
-  font-size: 16px;
+  line-height: 1.4;
+  font-size: 15px;
 }
+
+/* Links */
 
 .item a {
   color: #aaa;
-  font-weight: 800;
+  font-weight: 700;
   display: inline-block;
-  width: 140px;
-  margin-bottom: 8px;
+  width: 160px;
+  margin-bottom: 6px;
+}
+
+.item a:hover {
+  color: #fff;
+}
+
+/* =========================
+   SMALL POLISH
+========================= */
+
+/* center everything nicely on large screens */
+@media (min-width: 1400px) {
+  .home-panel {
+    transform: scale(1.05);
+    transform-origin: top center;
+  }
+}
+
+/* mobile fallback (basic) */
+@media (max-width: 900px) {
+  .home-panel {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .headshot {
+    width: 100%;
+  }
+
+  .portfolio {
+    width: 95%;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .portfolio-title {
+    width: 90%;
+  }
 }
