@@ -185,8 +185,4 @@ body.portfolio-page {
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .home-panel {
-    background-position: 25% top;
-  }
-}
+
