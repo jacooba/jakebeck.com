@@ -62,10 +62,10 @@ nav a.active {
 
 .bio {
   width: 390px;
-  padding: 25px 20px;
+  padding: 22px 20px;
   color: #ddd;
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .bio a {
