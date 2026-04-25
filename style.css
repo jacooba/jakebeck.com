@@ -32,7 +32,7 @@ a {
 
 header {
   text-align: center;
-  margin-top: 20px;      /* ↓ slightly less space above */
+  margin-top: 15px;      /* ↓ slightly less space above */
   min-width: 1040px;
 
   padding-bottom: 28px;  /* ↓ pushes nav DOWN */
