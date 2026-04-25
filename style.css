@@ -63,46 +63,92 @@ nav a:hover {
 
 
 
-.portfolio {
-  width: 850px;
-  margin: 0 auto;
+body.portfolio-page {
+  background: #000;
   color: #555;
 }
 
-.portfolio > h2,
-.portfolio > h3 {
+.portfolio-page header h1 {
+  color: #555;
+}
+
+.portfolio-page nav a {
+  color: #444;
+}
+
+.portfolio-page nav a.active {
+  color: #b65a45;
+}
+
+.portfolio-title {
+  width: 650px;
+  margin: 60px auto 90px;
+  border: 1px solid #777;
   text-align: center;
+  padding: 10px 0;
+}
+
+.portfolio-title h2 {
+  margin: 0;
   font-weight: 300;
+  color: #555;
+  font-size: 18px;
+}
+
+.portfolio-title h3 {
+  margin: 4px 0 0;
+  color: #c8c22a;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.portfolio {
+  width: 860px;
+  margin: 0 auto;
 }
 
 .item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 470px 1fr;
   gap: 25px;
-  margin: 40px 0;
+  border: 1px solid #666;
+  padding: 18px;
+  margin-bottom: 80px;
 }
 
 .item img {
-  width: 180px;
-  height: auto;
-  object-fit: contain;
+  width: 470px;
+  background: white;
 }
 
 .item h2 {
   margin: 0;
-  color: #555;
-  font-weight: 400;
+  display: inline;
+  background: #e5e529;
+  color: #111;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .item h4 {
-  margin: 5px 0 15px;
-  color: #666;
+  display: inline-block;
+  background: #e5e529;
+  color: #111;
+  margin: 6px 0 15px;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .item p {
-  line-height: 1.5;
+  color: #555;
+  line-height: 1.35;
+  font-size: 16px;
 }
 
 .item a {
-  color: #6d8fb3;
-  margin-right: 10px;
+  color: #aaa;
+  font-weight: 800;
+  display: inline-block;
+  width: 140px;
+  margin-bottom: 8px;
 }
