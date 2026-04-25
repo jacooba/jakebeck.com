@@ -195,16 +195,21 @@ body.portfolio-page {
   .home-panel {
     width: 100%;
     min-height: 760px;
-    background-size: cover;
-    background-position: 64% top;
+
+    /* KEY FIX */
+    background-size: 120% auto;       /* zoom out slightly */
+    background-position: 80% top;     /* push image RIGHT */
   }
 
   .bio {
-    width: 58%;
+    width: 440px;                    /* FIXED width (not %) */
+    max-width: 80%;
     min-height: 760px;
+
     padding: 28px 24px;
     font-size: 14px;
     line-height: 1.34;
-    background: rgba(0, 0, 0, 0.66);
+
+    background: rgba(0, 0, 0, 0.62); /* slightly more transparent */
   }
 }
