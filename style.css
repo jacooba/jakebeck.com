@@ -181,7 +181,7 @@ body.portfolio-page {
   color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
 
   .home-panel {
     background-size: contain;     /* KEY: no cropping */
