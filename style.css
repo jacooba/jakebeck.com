@@ -53,21 +53,21 @@ nav a.active {
 
 .home-panel {
   width: 1200px;
-  min-height: 720px;   /* key: no more cutoff */
   margin: 0 auto;
   background: #000;
   display: flex;
+  align-items: stretch;   /* important */
 }
 
 /* LEFT TEXT */
 .bio {
-  width: 480px;              /* wider */
-  padding: 28px 26px;
+  width: 520px;                 /* wider */
+  padding: 30px 28px;
   color: #ddd;
   font-size: 12px;
   line-height: 1.35;
 
-  background: rgba(0, 0, 0, 0.65);  /* more transparent */
+  background: rgba(0, 0, 0, 0.6);   /* more transparent */
 }
 
 .bio p {
@@ -76,11 +76,13 @@ nav a.active {
 
 /* RIGHT IMAGE */
 .headshot {
-  width: 720px;         /* more room for image */
-  height: auto;         /* allow full height */
+  width: 680px;
+  height: auto;            /* key: don't force height */
+  min-height: 100%;        /* fill container */
   object-fit: cover;
-  object-position: 55% center;  /* shift LEFT so face isn't cut */
+  object-position: 52% center;  /* shift slightly left */
   filter: grayscale(100%);
+  display: block;
 }
 
 /* =========================
