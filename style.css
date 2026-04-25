@@ -31,19 +31,20 @@ a {
 ========================= */
 
 header {
-  text-align: center;
-  margin-top: 20px;      /* ↓ slightly less space above */
   min-width: 1040px;
 
-  padding-bottom: 28px;  /* ↓ pushes nav DOWN */
+  height: 140px;              /* controls total vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centers everything vertically */
+  align-items: center;
 }
 
 h1 {
+  margin: 0 0 18px 0;        /* space to nav */
   font-weight: 200;
   font-size: 36px;
   color: #888;
-
-  margin-bottom: 10px;   /* ↓ small gap under title */
 }
 
 nav a {
