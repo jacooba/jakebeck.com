@@ -60,3 +60,49 @@ nav a:hover {
   object-fit: cover;
   filter: grayscale(100%);
 }
+
+
+
+.portfolio {
+  width: 850px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.portfolio > h2,
+.portfolio > h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.item {
+  display: flex;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.item img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.item h2 {
+  margin: 0;
+  color: #555;
+  font-weight: 400;
+}
+
+.item h4 {
+  margin: 5px 0 15px;
+  color: #666;
+}
+
+.item p {
+  line-height: 1.5;
+}
+
+.item a {
+  color: #6d8fb3;
+  margin-right: 10px;
+}
