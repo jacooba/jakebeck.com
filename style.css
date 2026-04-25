@@ -168,3 +168,11 @@ body.portfolio-page {
 .item a:hover {
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  .bio {
+    width: 85%;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.65);
+  }
+}
