@@ -53,29 +53,28 @@ nav a.active {
 
 .home-panel {
   width: 1040px;
-  min-height: 720px;
+  min-height: 820px;
   margin: 0 auto;
   background-image: url("images/headshot.jpg");
-  background-size: cover;
-  background-position: 62% center;
+  background-size: auto 100%;
+  background-position: right top;
   background-repeat: no-repeat;
-  filter: grayscale(100%);
+  background-color: #000;
 }
 
 .bio {
-  width: 430px;
-  min-height: 720px;
+  width: 475px;
+  min-height: 820px;
   padding: 28px 24px;
   box-sizing: border-box;
   color: #eee;
-  font-size: 12px;
-  line-height: 1.32;
-  background: rgba(0, 0, 0, 0.72);
-  filter: grayscale(0%);
+  font-size: 11.5px;
+  line-height: 1.28;
+  background: rgba(0, 0, 0, 0.62);
 }
 
 .bio p {
-  margin: 0 0 14px;
+  margin: 0 0 13px;
 }
 
 /* =========================
@@ -185,24 +184,12 @@ body.portfolio-page {
    SMALL POLISH
 ========================= */
 
-/* center everything nicely on large screens */
-@media (min-width: 1400px) {
-  .home-panel {
-    transform: scale(1.05);
-    transform-origin: top center;
-  }
-}
-
 /* mobile fallback (basic) */
 @media (max-width: 900px) {
   .home-panel {
     flex-direction: column;
     width: 100%;
     height: auto;
-  }
-
-  .headshot {
-    width: 100%;
   }
 
   .portfolio {
