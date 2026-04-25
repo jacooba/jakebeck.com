@@ -52,37 +52,30 @@ nav a.active {
 ========================= */
 
 .home-panel {
-  width: 1200px;
+  width: 1040px;
+  min-height: 720px;
   margin: 0 auto;
-  background: #000;
-  display: flex;
-  align-items: stretch;   /* important */
+  background-image: url("images/headshot.jpg");
+  background-size: cover;
+  background-position: 62% center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
 }
 
-/* LEFT TEXT */
 .bio {
-  width: 520px;                 /* wider */
-  padding: 30px 28px;
-  color: #ddd;
+  width: 430px;
+  min-height: 720px;
+  padding: 28px 24px;
+  box-sizing: border-box;
+  color: #eee;
   font-size: 12px;
-  line-height: 1.35;
-
-  background: rgba(0, 0, 0, 0.6);   /* more transparent */
+  line-height: 1.32;
+  background: rgba(0, 0, 0, 0.72);
+  filter: grayscale(0%);
 }
 
 .bio p {
   margin: 0 0 14px;
-}
-
-/* RIGHT IMAGE */
-.headshot {
-  width: 680px;
-  height: auto;            /* key: don't force height */
-  min-height: 100%;        /* fill container */
-  object-fit: cover;
-  object-position: 52% center;  /* shift slightly left */
-  filter: grayscale(100%);
-  display: block;
 }
 
 /* =========================
