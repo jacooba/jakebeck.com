@@ -31,34 +31,19 @@ a {
 ========================= */
 
 header {
-  position: relative;
-  min-width: 1040px;
-  height: 140px;          /* controls total header height */
-  margin-top: 0;
   text-align: center;
+  margin-top: 20px;      /* ↓ slightly less space above */
+  min-width: 1040px;
+
+  padding-bottom: 28px;  /* ↓ pushes nav DOWN */
 }
 
-/* NAV pinned to bottom */
-nav {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: 0;
-  white-space: nowrap;
-}
-
-/* TITLE centered in remaining space */
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);  /* slight upward bias */
-  
-  margin: 0;
   font-weight: 200;
   font-size: 36px;
   color: #888;
+
+  margin-bottom: 10px;   /* ↓ small gap under title */
 }
 
 nav a {
