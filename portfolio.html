@@ -1,18 +1,193 @@
-<main class="portfolio">
-  <h2>Legacy Portfolio</h2>
-  <h3>*See CV for New Work*</h3>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacob Beck – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <section class="item">
-    <img src="images/AMRL_cover.jpg" alt="AMRL" />
-    <div>
-      <h2>AMRL</h2>
-      <h4>Microsoft Research (First Author)</h4>
-      <p>Wrote a paper, as the first author, published at ICLR 2020...</p>
-      <p>
-        <a href="#">Paper [ICLR]</a>
-        <a href="#">Paper [Microsoft]</a>
-        <a href="#">Publicity 1</a>
-      </p>
-    </div>
-  </section>
-</main>
+<body class="portfolio-page">
+
+  <header>
+    <h1>Jacob Beck</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="https://scholar.google.com/">Scholar</a>
+      <a class="active" href="portfolio.html">Pre-PhD Portfolio</a>
+      <a href="cv.pdf">CV</a>
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://linkedin.com/">LinkedIn</a>
+      <a href="https://twitter.com/">Twitter</a>
+      <a href="#">For Fun</a>
+    </nav>
+  </header>
+
+  <div class="portfolio-title">
+    <h2>Legacy Portfolio</h2>
+    <h3>*See CV for New Work*</h3>
+  </div>
+
+  <main class="portfolio">
+
+    <!-- AMRL -->
+    <section class="item">
+      <img src="images/AMRL_cover.jpg" />
+      <div>
+        <h2>AMRL</h2><br/>
+        <h4>Microsoft Research (First Author)</h4>
+
+        <p>
+          Wrote a paper, as the first author, published at ICLR 2020, as part of a pre-doc with MSR. 
+          The work demonstrates the sensitivity of modern memory approaches to policy stochasticity 
+          and noise in deep RL. We propose a solution framework that improves average return by 19% 
+          over a baseline with the same number of parameters, and by 9% over a DNC, with many more parameters.
+        </p>
+
+        <p>
+          Feedback was very positive. For example, Reviewer1 states:
+        </p>
+
+        <p>
+          "The experiments provided are good, and vary nicely between actual RL runs and theoretical analysis..."
+        </p>
+
+        <p>
+          <a href="#">Paper [ICLR]</a><br/>
+          <a href="#">Paper [Microsoft]</a><br/>
+          <a href="#">Publicity 1</a><br/>
+          <a href="#">Publicity 2</a>
+        </p>
+
+        <p>Note, OpenReview scores are now out of 8, and 6 is second greatest possible score.</p>
+      </div>
+    </section>
+
+    <!-- Stackelberg -->
+    <section class="item">
+      <img src="images/Stackelberg_cover.jpg" />
+      <div>
+        <h2>Stackelberg Vehicles</h2><br/>
+        <h4>SDC Lab (Research Member)</h4>
+
+        <p>
+          Worked in Brown's Self-Driving Car Lab on social interactions between humans and autonomous vehicles,
+          calculating Stackelberg equilibria in game trees.
+        </p>
+
+        <p>
+          <a href="#">Paper [ICSR]</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Human Actor Critic -->
+    <section class="item">
+      <img src="images/Masters_Research_First_Page.jpg" />
+      <div>
+        <h2>Human-Actor Human-Critic</h2><br/>
+        <h4>Masters Research (Lead)</h4>
+
+        <p>
+          Research on learning from human demonstration and human feedback. We propose a framework and evaluate
+          methods where feedback is interpreted as a direction in action space.
+        </p>
+
+        <p>
+          <a href="#">Brown Masters Research</a><br/>
+          <a href="#">PDF</a><br/>
+          <a href="#">Publicity</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- MARL Proposal -->
+    <section class="item">
+      <img src="images/Research_Proposal_Cover.jpg" />
+      <div>
+        <h2>Collaboration in Deep MARL</h2><br/>
+        <h4>PhD Proposal</h4>
+
+        <p>
+          Initial PhD proposal identifying issues in policy gradient methods for multi-agent RL with
+          centralized training and decentralized execution, and proposing an information-theoretic approach.
+        </p>
+
+        <p>
+          <a href="#">Proposal</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ACKTR -->
+    <section class="item">
+      <img src="images/ACKTR_cover.jpg" />
+      <div>
+        <h2>ACKTR</h2><br/>
+        <h4>Implementation</h4>
+
+        <p>
+          Implemented "Scalable trust-region method for deep RL using Kronecker-factored approximation".
+        </p>
+
+        <p>
+          <a href="#">Slides</a><br/>
+          <a href="#">Report</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Neural Mesh -->
+    <section class="item">
+      <img src="images/neural_cover.jpg" />
+      <div>
+        <h2>Neural Mesh</h2><br/>
+        <h4>Research Lead</h4>
+
+        <p>
+          Research into a biologically inspired RNN with spatial structure and conservation of energy.
+        </p>
+
+        <p>
+          <a href="#">arXiv paper</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CaRL -->
+    <section class="item">
+      <img src="images/CaRL_cover.jpg" />
+      <div>
+        <h2>CaRL</h2><br/>
+        <h4>SDC Lab</h4>
+
+        <p>
+          Built a DQN for lane sharing, comparing agent performance to humans against varying opponent behaviors.
+        </p>
+
+        <p>
+          <a href="#">Report</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Food with Friends -->
+    <section class="item">
+      <img src="images/food_cover.jpg" />
+      <div>
+        <h2>Food with Friends</h2><br/>
+        <h4>Co-founder</h4>
+
+        <p>
+          iOS app for organizing meals with friends. Designed core systems including matching, messaging, and UI.
+        </p>
+
+        <p>
+          <a href="#">Screenshots</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
