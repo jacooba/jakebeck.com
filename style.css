@@ -22,6 +22,10 @@ a {
   color: #c6dcff;   /* even lighter on hover */
 }
 
+.bio a:visited {
+  color: #8fb8ff;
+}
+
 /* =========================
    HEADER / NAV
 ========================= */
