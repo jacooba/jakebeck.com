@@ -82,7 +82,9 @@ nav a.active {
   min-height: 720px;
   padding: 28px 26px;
   box-sizing: border-box;
-  color: #eee;
+  color: #ddd;          /* softer than #eee */
+  line-height: 1.4;     /* more spacing → lighter feel */
+  font-weight: 300;     /* thinner text */
   font-size: 13px;
   line-height: 1.32;
   background: rgba(0, 0, 0, 0.30);
