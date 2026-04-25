@@ -52,33 +52,34 @@ nav a.active {
 ========================= */
 
 .home-panel {
-  width: 1040px;
-  height: 720px;
+  width: 1200px;
+  min-height: 720px;   /* key: no more cutoff */
   margin: 0 auto;
   background: #000;
   display: flex;
-  overflow: hidden;
 }
 
+/* LEFT TEXT */
 .bio {
-  width: 410px;
-  padding: 24px 22px;
+  width: 480px;              /* wider */
+  padding: 28px 26px;
   color: #ddd;
-  font-size: 11.5px;
-  line-height: 1.28;
-  background: rgba(0, 0, 0, 0.72);
-  z-index: 2;
+  font-size: 12px;
+  line-height: 1.35;
+
+  background: rgba(0, 0, 0, 0.65);  /* more transparent */
 }
 
 .bio p {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 }
 
+/* RIGHT IMAGE */
 .headshot {
-  width: 630px;
-  height: 100%;
+  width: 720px;         /* more room for image */
+  height: auto;         /* allow full height */
   object-fit: cover;
-  object-position: 62% center;
+  object-position: 55% center;  /* shift LEFT so face isn't cut */
   filter: grayscale(100%);
 }
 
