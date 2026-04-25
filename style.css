@@ -37,15 +37,17 @@ header {
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 38px;
-  color: #777;
+  font-weight: 200;     /* lighter */
+  font-size: 36px;      /* slightly smaller */
+  color: #888;          /* softer gray */
   margin-bottom: 20px;
 }
 
-nav {
-  margin-bottom: 20px;
-  white-space: nowrap;
+nav a {
+  color: #999;          /* lighter gray */
+  margin: 0 11px;
+  font-size: 13px;      /* slightly smaller */
+  font-weight: 300;     /* thinner */
 }
 
 nav a {
