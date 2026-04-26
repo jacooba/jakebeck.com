@@ -198,6 +198,6 @@ body.portfolio-page {
   .bio {
     width: 94%;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.65);
+    background: none;
   }
 }
