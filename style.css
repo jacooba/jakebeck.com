@@ -183,13 +183,21 @@ body.portfolio-page {
 
 @media only screen and (max-device-width: 600px) {
 
+  html {
+    overflow-x: scroll;
+  }
+
+  body {
+    width: 1150px;   /* match your desktop min-width */
+  }
+
   .home-panel {
-    background-size: contain;     /* KEY: no cropping */
+    background-size: contain;     
     background-position: center top;
     background-repeat: no-repeat;
 
-    min-height: auto;             /* let it shrink naturally */
-    padding-top: 60%;             /* creates space for full image */
+    min-height: auto;
+    padding-top: 60%;
   }
 
   .bio {
