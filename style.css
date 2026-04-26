@@ -191,16 +191,13 @@ body.portfolio-page {
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-
     min-height: auto;
     padding-top: 60%;
   }
 
   .bio {
-    width: 100%;
-    padding: 28px 20px;
-    box-sizing: border-box;          /* ← CRITICAL */
+    width: 94%;
+    box-sizing: border-box;
     background: rgba(0, 0, 0, 0.65);
   }
 }
-
